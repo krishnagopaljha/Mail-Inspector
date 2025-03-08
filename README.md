@@ -7,11 +7,10 @@ This is a **Flask-based web application** that allows users to upload `.eml` ema
 ## 📂 Directory Structure
 
 ```
-/phishing-analyzer
+/mailinspector
 │── /static
-│   ├── /css       # CSS files (if needed)
-│   ├── /js        # JavaScript files
-│   │   └── script.js  # Handles UI updates and file upload logic
+│   ├── style.css       # CSS files (if needed)
+│   ├── script.js        # JavaScript files
 │── /templates
 │   └── index.html  # Main UI template for file upload & results
 │── /uploads        # Stores uploaded .eml files
@@ -27,8 +26,8 @@ This is a **Flask-based web application** that allows users to upload `.eml` ema
 
 ### **1️⃣ Clone the Repository**
 ```sh
-git clone https://github.com/krishnagopaljha/mailinspector
-cd phishing-analyzer
+git clone https://github.com/krishnagopaljha/mailinspector.git
+cd mailinspector
 ```
 
 ### **3️⃣ Install Dependencies**
