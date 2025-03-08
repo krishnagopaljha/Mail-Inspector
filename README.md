@@ -27,14 +27,8 @@ This is a **Flask-based web application** that allows users to upload `.eml` ema
 
 ### **1️⃣ Clone the Repository**
 ```sh
-git clone https://github.com/yourusername/phishing-analyzer.git
+git clone https://github.com/krishnagopaljha/mailinspector
 cd phishing-analyzer
-```
-
-### **2️⃣ Create a Virtual Environment**
-```sh
-python3 -m venv venv
-source venv/bin/activate   # On Windows use: venv\Scripts\activate
 ```
 
 ### **3️⃣ Install Dependencies**
@@ -82,20 +76,4 @@ http://0.0.0.0:5000
 
 This allows **network access**, so other devices on the same network can access the tool.
 
----
-
-## 📝 How to Use
-1️⃣ Open the web interface  
-2️⃣ Upload a `.eml` file  
-3️⃣ Get the **phishing risk score** and analysis  
-4️⃣ Review the **Overview** and **Detailed Explanation**  
-
----
-
-## 📜 License
-This project is **open-source** and free to use.
-
----
-
-### 🚀 **Happy Phishing Detection! 🛡️**
 
