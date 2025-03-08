@@ -1,0 +1,17 @@
+From: admin@banking-secure.com
+Return-Path: support@secure-banking.com
+To: user@example.com
+Subject: !!!Immediate Action Required - Password Reset Needed!!!
+
+Dear User,
+
+Your account has been locked due to security reasons. Click below to reset your password:
+
+http://secure-login.com@evil.com/login
+
+Also, open the attached document for further instructions.
+
+[Attachment: update_security.exe]
+
+Best Regards,
+Secure Banking Team
