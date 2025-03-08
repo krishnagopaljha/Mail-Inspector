@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail Inspector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>📧 Mail Inspector</h1>
+    </header>
+
+    <div class="container">
+        <h2>🚀 Mail Inspector</h2>
+        <p>Upload a <strong>.eml</strong> file to analyze its phishing risk.</p>
+
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <div class="upload-container">
+                <label for="file" class="upload-label">📂 Choose File</label>
+                <span class="file-name">No file chosen</span>
+                <input type="file" id="file" name="file" accept=".eml" required>
+            </div>
+            <button type="submit">🔍 Analyze</button>
+        </form>
+
+        <p class="loading">⏳ Analyzing... Please wait.</p>
+
+        {% if error %}
+            <p class="error">⚠️ Error: {{ error }}</p>
+        {% endif %}
+
+        {% if filename %}
+            <div class="results">
+                <h3>📜 Analysis Result</h3>
+                <p><strong>Filename:</strong> {{ filename }}</p>
+                <p><strong>Phishing Score:</strong> 
+                    <span class="score" data-score="{{ score }}">{{ score }}/10</span>
+                </p>
+
+                <h4 class="overview-heading">🛑 Overview:</h4>
+                <p class="overview">{{ overview }}</p>
+
+                <h4>🔍 Detailed Explanation:</h4>
+                <p class="explanation">{{ explanation }}</p>
+            </div>
+        {% endif %}
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Mail Inspector. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
